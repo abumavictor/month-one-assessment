@@ -1,6 +1,6 @@
 #!/bin/bash
 yum update -y
-amazon-linux-extras install postgresql10 -y
+amazon-linux-extras enable postgresql14
 yum install -y postgresql-server
 postgresql-setup initdb
 systemctl start postgresql
