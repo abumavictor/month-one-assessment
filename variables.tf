@@ -35,4 +35,3 @@ variable "key_name" {
   type        = string
   default     = "techcorp-key"
 }
-vagrant@ubuntu2004:~/month-one-assessment$
