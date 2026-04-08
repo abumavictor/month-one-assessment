@@ -1,5 +1,7 @@
 #!/bin/bash
 yum update -y
-yum install -y mariadb-server
-systemctl start mariadb
-systemctl enable mariadb
+amazon-linux-extras install postgresql10 -y
+yum install -y postgresql-server
+postgresql-setup initdb
+systemctl start postgresql
+systemctl enable postgresql
