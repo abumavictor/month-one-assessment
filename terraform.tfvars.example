@@ -1,0 +1,5 @@
+aws_region        = "us-east-1"
+vpc_cidr          = "10.0.0.0/16"
+instance_type_web = "t3.micro"
+key_name          = "your-key-pair-name"
+my_ip             = "0.0.0.0/0"
