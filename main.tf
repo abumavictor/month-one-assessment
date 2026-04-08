@@ -1,4 +1,3 @@
-
 # 1. Provider configuration
 provider "aws" {
   region = var.aws_region
@@ -291,7 +290,8 @@ resource "aws_instance" "bastion" {
 
   user_data = <<-EOF
               #!/bin/bash
-              echo "ec2-user:TechCorp2026!" | chpasswd
+              # Using a placeholder for the assessment submission
+              echo "ec2-user:REDACTED_PASSWORD" | chpasswd
               sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
               sed -i 's/^#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
               systemctl restart sshd
@@ -339,5 +339,3 @@ resource "aws_lb_target_group_attachment" "web_2" {
   target_group_arn = aws_lb_target_group.web_tg.arn
   target_id        = aws_instance.web_server_2.id
   port             = 80
-}
-
