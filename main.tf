@@ -340,4 +340,4 @@ resource "aws_lb_target_group_attachment" "web_2" {
   target_id        = aws_instance.web_server_2.id
   port             = 80
 }
-vagrant@ubuntu2004:~/month-one-assessment$
+
