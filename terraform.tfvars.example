@@ -1,0 +1,6 @@
+aws_region        = "us-east-1"
+instance_type_web = "t3.micro"
+instance_type_db  = "t3.small"
+key_name          = "my-key-pair-name"
+my_ip             = "0.0.0.0/32"
+bastion_password  = "my-secure-password"

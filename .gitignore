@@ -1,0 +1,7 @@
+.terraform/
+.vagrant/
+*.tfplan
+terraform.tfvars
+.terraform.lock.hcl
+terraform.tfstate.backup
+Vagrantfile
